@@ -36,3 +36,13 @@ CREATE TABLE IF NOT EXISTS pays (
 
 INSERT INTO pays (iso_3, nom, iso_2, nationalite)
 VALUES('ESP', 'España', 'ES', 'Español');
+
+USE contacts;
+
+CREATE TABLE IF NOT EXISTS telephone (
+    id INT AUTO_INCREMENT PRIMARY KEY,
+    id_contact INT,
+    numero VARCHAR(20),
+    type VARCHAR(50),
+    FOREIGN KEY (id_contact) REFERENCES contacts(id)
+);
