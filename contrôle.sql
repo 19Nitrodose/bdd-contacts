@@ -1,7 +1,3 @@
-INSERT INTO pays (iso_3, nom, iso_2, nationalite)
-VALUES
-    ('ESP', 'España', 'ES', 'Español');
-
 CREATE DATABASE IF NOT EXISTS contacts;
 
 USE contacts;
