@@ -34,3 +34,5 @@ CREATE TABLE IF NOT EXISTS pays (
     nationalite VARCHAR(255)
 );
 
+INSERT INTO pays (iso_3, nom, iso_2, nationalite)
+VALUES('ESP', 'España', 'ES', 'Español');
