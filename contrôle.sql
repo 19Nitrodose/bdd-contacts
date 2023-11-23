@@ -1,4 +1,4 @@
-CREATE DATABASE IF NOT EXISTS contacts;
+CREATE DATABASE IF NOT EXISTS zorrita;
 
 USE contacts;
 
@@ -33,18 +33,17 @@ CREATE TABLE IF NOT EXISTS pays (
     nationalite VARCHAR(255)
 );
 
-INSERT INTO pays (iso_3, nom, iso_2, nationalite)
-VALUES
-    ('USA', 'Estados Unidos', 'US', 'Estadounidense'),
-    ('CAN', 'Canadá', 'CA', 'Canadiense'),
-    ('GBR', 'Reino Unido', 'GB', 'Británico'),
-    ('FRA', 'Francia', 'FR', 'Francés'),
-    ('ESP', 'España', 'ES', 'Español'),
-    ('DEU', 'Alemania', 'DE', 'Alemán'),
-    ('AUS', 'Australia', 'AU', 'Australiano'),
-    ('JPN', 'Japón', 'JP', 'Japonés'),
-    ('CHN', 'China', 'CN', 'Chino'),
-    ('BRA', 'Brasil', 'BR', 'Brasileño');
+INSERT INTO pays (iso_3, nom, iso_2, nationalite)VALUES
+('USA', 'Estados Unidos', 'US', 'Estadounidense'),
+('CAN', 'Canadá', 'CA', 'Canadiense'),
+('GBR', 'Reino Unido', 'GB', 'Británico'),
+('FRA', 'Francia', 'FR', 'Francés'),
+('ESP', 'España', 'ES', 'Español'),
+('DEU', 'Alemania', 'DE', 'Alemán'),
+('AUS', 'Australia', 'AU', 'Australiano'),
+('JPN', 'Japón', 'JP', 'Japonés'),
+('CHN', 'China', 'CN', 'Chino'),
+('BRA', 'Brasil', 'BR', 'Brasileño');
 
 USE contacts;
 
