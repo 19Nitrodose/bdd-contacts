@@ -13,3 +13,10 @@ CREATE TABLE IF NOT EXISTS contacts (
     ville VARCHAR(255),
     pays_iso_3 CHAR(3)
 );
+
+SHOW DATABASE;
+
+USE contacts;
+
+INSERT INTO contacts (nom, prenom, date_de_naissance, sexe, adresse, cp, ville, pays_iso_3)
+VALUES ('Stark', 'John', '1984-10-14', 'H', '1 Avenue De WinterFell', '19884', 'WinterFell', 'ESP');
