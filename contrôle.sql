@@ -1,3 +1,7 @@
+INSERT INTO pays (iso_3, nom, iso_2, nationalite)
+VALUES
+    ('ESP', 'España', 'ES', 'Español');
+
 CREATE DATABASE IF NOT EXISTS contacts;
 
 USE contacts;
@@ -20,3 +24,13 @@ USE contacts;
 
 INSERT INTO contacts (nom, prenom, date_de_naissance, sexe, adresse, cp, ville, pays_iso_3)
 VALUES ('Stark', 'John', '1984-10-14', 'H', '1 Avenue De WinterFell', '19884', 'WinterFell', 'ESP');
+
+USE contacts;
+
+CREATE TABLE IF NOT EXISTS pays (
+    iso_3 CHAR(3) PRIMARY KEY,
+    nom VARCHAR(255),
+    iso_2 CHAR(2),
+    nationalite VARCHAR(255)
+);
+
